@@ -1,0 +1,291 @@
+% cv-us.tex
+% $Id: cv-us.tex,v 1.28 2006/12/12 22:53:52 jrblevin Exp $
+%
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2006 Jason Blevins
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents, however, I do ask that you
+% please leave this notice and the above URL in the source code if you
+% choose to redistribute this file.
+%
+% Jason R. Blevins <jrblevin@sdf.lonestar.org>
+% http://jrblevin.freeshell.org
+% Durham, December 12, 2006
+%
+%%---------------------------------------------------------------------------%
+%
+% Notes:
+%
+% * Don't forget to change `pdfauthor' and `keywords' in the \hypersetup
+%   section below.
+%
+% * To create a new page use: \newpage \opening
+%
+% * res.cls includes an \address{} command which can be used up to twice,
+%   but my address is too long for the format it uses.
+%
+% * Alternate documentclass statement to put headings in margin:
+%   \documentclass[margin,line,11pt,final]{res}
+%
+% * Can divide publication/presentation list into subsections by year:
+%   \section{\bf\small\hspace{8mm}2006}
+%
+%%----------------------------------------------------------------------------%
+
+\documentclass[overlapped,line,letterpaper]{res}
+
+\usepackage{ifpdf}
+
+\ifpdf
+  \usepackage[pdftex]{hyperref}
+\else
+  \usepackage[hypertex]{hyperref}
+\fi
+
+\hypersetup{
+  letterpaper,
+  colorlinks,
+  urlcolor=black,
+  pdfpagemode=none,
+  pdftitle={Curriculum Vitae},
+  pdfauthor={Niranjan Balasubramanian},
+  pdfsubject={Curriculum Vitae}
+}
+
+%%===========================================================================%%
+
+\begin{document}
+
+%---------------------------------------------------------------------------
+% Document Specific Customizations
+
+% Make lists without bullets and with no indentation
+\setlength{\leftmargini}{0em}
+\renewcommand{\labelitemi}{}
+
+% Use large bold font for printed name at top of pages
+\renewcommand{\namefont}{\large\textbf}
+
+%---------------------------------------------------------------------------
+
+\name{Niranjan Balasubramanian}
+
+\begin{resume}
+\begin{ncolumn}{2}
+ Postdoctoral Research Associate    & E-mail:  niranjan@cs.washington.edu \\
+ University of Washington 		& Phone: $315 \ 406 \ 2939$ \\
+						        & Webpage: homes.cs.washington.edu/$\sim$niranjan
+ \end{ncolumn}
+%---------------------------------------------------------------------------
+\section{\bf Research Interests}
+\vspace{0.1in}
+{\bf Natural Language Processing} \\
+Event extraction, Knowledge Extraction, and Question Answering.
+
+{\bf Information Retrieval}\\
+ Performance estimation, Query-dependent strategies, and Mobile search.
+
+\section{\bf Education}
+\vspace{0.1in}
+{\bf Ph.D}, Computer Science -- University of Massachusetts Amherst, July 2011.\\
+{\bf M.S.}, Computer Science -- University at Buffalo (SUNY), July 2003.\\
+{\bf B.Eng}, Computer Science -- Shanmugha College of Engineering, Tamilnadu, India (May 2001).\\
+
+\section{\bf Work Experience}
+\vspace{0.1in}
+\begin{format}
+\title{l}\dates{r}\\
+\employer{l}\location{r}\\
+\body\\
+\end{format}
+\title{Postdoctoral Fellow}
+\employer{Mentor: Oren Etzioni}
+\location{{\bf University of Washington}}
+\dates{July 2011 --  Present.}
+\begin{position}
+{\em Event Modeling and Question Answering using Open Information Extraction.}
+\end{position}
+\title{Research Assistant}
+\employer{Advisor: Prof. James Allan}
+\location{{\bf University of Massachusetts}}
+\dates{2006 -- 2011}
+\begin{position}
+{\em Query dependent strategies in Information Retrieval}
+\end{position}
+\title{Research Intern}
+\employer{Mentors: Vitor Carvalho and Giridhar Kumaran}
+\location{{\bf Microsoft Research}}
+\dates{Summer 2009}
+\begin{position}
+{\em Improving web search performance for long queries.}
+\end{position}
+\title{Research Intern}
+\employer{Mentor: Silviu Cucerzan}
+\location{{\bf Microsoft Research}}
+\dates{Summer 2008}
+\begin{position}
+{\em Generating wikipedia like pages for entities.}
+\end{position}
+\title{Research Intern}
+\employer{Mentor: Arkady Borkovsky}
+\location{{\bf Yahoo! Applied Research}}
+\dates{Summer 2008}
+\begin{position}
+{\em  Statistical models for Question retrieval.}
+\end{position}
+
+\title{Software Engineer}
+\employer{Center for Natural Language Processing\\
+Manager: Prof. Elizabeth D. Liddy}
+\location{{\bf Syracuse University}}
+\dates{2003--2006}
+\begin{position}
+{\em Development of Question Answering, and Information extraction tools.}
+\end{position}
+
+\section{\bf Journal publications}
+\vspace{0.2in}
+\begin{enumerate} 
+\item {\bf [IJSC 11]} Beyond Ranked Lists in Web Search: Aggregating Web Content in Topic Pages.\\
+	Balasubramanian, N., and Cucerzan, S.\\
+	International Journal of Semantic Computing, 2011.
+\end{enumerate}
+
+\section{\bf Conference Publications} 
+\vspace{0.2in}
+\begin{enumerate}
+\item {\bf [EMNLP 2013]} Generating Coherent Event Schemas at Scale.\\
+	Balasubramanian, N., Soderland, S., Mausam, and Etzioni, O.\\
+	Conference on Empirical Methods in Natural Language Processing.
+	
+\item {\bf [CoNext 2012]} FindAll: A Local Search Engine for Mobile Phones.\\
+	Balasubramanian, A., Balasubramanian, N., Huston, Samuel., Metzler, Donald.\\	 
+	ACM CoNext conference.
+
+\item {\bf [SIGIR 2010]} Exploring Reductions for Long Web Queries.\\
+	Balasubramanian, N., Kumaran, G., and Carvalho, V.\\
+	ACM SIGIR Conference.
+
+\item {\bf [SIGIR 2010]} Learning to Select Rankers.\\
+	Balasubramanian, N. and Allan, J.\\
+	A poster paper at ACM SIGIR Conference.
+	
+\item {\bf [SIGIR 2010]} Predicting Query Performance on the Web.\\
+	Balasubramanian, N., Kumaran, G., and Carvalho, V.\\
+	A poster paper at ACM SIGIR Conference.
+
+\item {\bf [ICSC 2010]} Topic Pages: An Alternative to the Ten Blue Links.\\
+	Balasubramanian, N. and Cucerzan, S.\\
+	IEEE Conference on Semantic Computing {\bf (Among top 5 papers selected for IJSC journal.)}
+
+\item {\bf [CIKM 2009]} Automatic Generation of Topic Pages Using Query-based Aspect Models.\\
+	Balasubramanian, N. and Cucerzan, S.\\
+	A short paper at ACM Conference on Information and Knowledge Management
+
+\item {\bf [IMC 2009]} Energy Consumption in Mobile Phones: A Measurement Study and Implications for Network Applications.\\
+	Balasubramanian, N., Balasubramanian, A. and Venkataramani, A.\\
+	ACM Internet Measurement Conference.
+	
+\item {\bf [SPIRE 2009]} Syntactic Query Models for Restatement Retrieval.\\
+	Balasubramanian, N. and Allan, J.\\
+	String Processing and Information Retrieval Conference.
+	
+\item {\bf [SIGIR 2007]} A Comparison of Sentence Retrieval Techniques.\\
+	Balasubramanian, N., Allan, J. and Croft, W. B.\\
+	A poster at ACM SIGIR Conference.
+
+%\item {\bf [AAAI 2005]} Improved Document Representation for Classification Tasks for the Intelligence Community.\\
+%	Yilmazel, O., Symonenko, S., Balasubramanian, N., Liddy, E.D.\\
+%	Proceedings of AAAI Spring Symposium Series.
+
+\end{enumerate}
+
+\section{\bf Workshop publications}
+\begin{enumerate}
+\vspace{0.2in}
+
+\item {\bf [AKBC 2013]} Clark P., Harrison P., Balasubramanian N.\\ 
+	A Study of the AKBC/Requirements for Passing an Elementary Science Test. \\
+	 Automatic Knowledge Base Construction and Web-scale Knowledge Extraction at CIKM 2013.
+
+\item {\bf [AKBC 2012]} Balasubramanian, N., Soderland, S., Mausam, Etzioni, O.\\ 
+	Rel-grams: A Probabilistic Model of Relations in Text.\\ 
+	 Automatic Knowledge Base Construction and Web-scale Knowledge Extraction at NAACL 2012.
+
+\item {\bf [AKBC 2012]} Clark, P., Harrison, P., Balasubramanian, N., Etzioni, O.\\
+	 Constructing a Textual KB from a Biology TextBook.\\
+	 Automatic Knowledge Base Construction and Web-scale Knowledge Extraction at NAACL 2012.
+
+\item {\bf [NW-NLP 2012]} Clark, P., Harrison, P., Balasubramanian, N.\\
+	Answering Biology Questions using Textual Reasoning.\\
+	Pacific Northwest Regional NLP Workshop 2012. 
+
+%\item {\bf [NESCAI 2010]} Cost-Effective Combination of Multiple Rankers: Learning When Not To Query.\\
+%	Balasubramanian, N., Bendersky, M. and Allan, J.\\
+%	A poster at the NESCAI Student Colloquium, 2010
+
+\end{enumerate}
+
+\section{Technical Reports}
+\begin{enumerate}
+\item {\bf[2012]} “Out of the Box” Information Extraction: a Case Study using Bio-Medical Texts.\\
+	Balasubramanian, N., Soderland, S., Mausam, Etzioni, O., and Bart, R.\\
+	Technical Report (UW-CS-2012-xxx) in Computer Science, University of Washington.		
+\item {\bf[2011]} Modeling Relative Effectiveness to Leverage Multiple Ranking Algorithms.\\ 
+	Balasubramanian, N. and Allan, J.\\
+	CIIR Technical Report (IR-xxx) in University of Massachusetts Amherst.
+\item {\bf[2009]} Energy Aware Search from Mobile Phones.\\
+	Balasubramanian, N., Venkataramani, A. and Allan, J.,\\
+	CIIR Technical Report (IR-706) in University of Massachusetts Amherst.		
+\item {\bf[2009]} Energy Consumption in Mobile Phones: Measurement, Design Implications, and Algorithms.\\
+	Balasubramanian, N., Balasubramanian, A., and Venkataramani, A.\\
+	Technical Report (UM-CS-2009-022) in Computer Science, University of Massachusetts Amherst.
+\end{enumerate}
+
+\section{Invited Contributions}
+\begin{enumerate}
+\item {\bf[2010]} Online Feature Selection for Information Retrieval.\\
+	Balasubramanian, N., Kumaran, G., Carvalho, V. and Allan, J.\\
+	Feature Generation and Selection Workshop for Information Retrieval, SIGIR 2010.
+\end{enumerate}
+
+
+\section{\bf Invited talks}
+\begin{enumerate}  
+\item {\bf University at Buffalo} - Open Event Schemas, October 2013.
+\item {\bf Decide.com} - Machine Learning for Information Retrieval, March 2012.
+\item {\bf University of Washington} - Machine Learning for Information Retrieval, Feb 2012.
+\item {\bf University of Waterloo} - Query-dependent Selection of Retrieval Alternatives, March 2010. 
+\item {\bf University at Buffalo} - Query-dependent Selection of Retrieval Alternatives, March 2010. 
+\end{enumerate}
+
+
+\section{\bf Services and Awards}
+\vspace{0.2in}
+\begin{enumerate}
+\item {\bf Reviewing:} 
+\begin{itemize}
+\item {\bf IR} -- SIGIR 2011, 2012-13 posters, WSDM 2011, CIKM 2012-13
+\item {\bf NLP} -- EMNLP 2012-13, AAAI 2012-13, NAACL Student Research Workshop 2009
+\end{itemize}
+%\item {\bf Reviewer for IR} SIGIR (2011, 2012-13 posters), WSDM 2011, CIKM 2012-13.
+%\item {\bf Reviewer for NLP} EMNLP 2012-13, AAAI 2012-2013, NAACL Student Research Workshop, 2009.
+\item {\bf Travel Award}: SIGIR 2010.
+\item {\bf Graduate Student Representative, UMass CS}: 2010. 
+\end{enumerate}
+
+\section{\bf Teaching Activities}
+\begin{enumerate}
+\item {\bf Teaching Assistant:} Information Retrieval by Prof. James Allan, CS Univ. of Massachusetts.
+\item {\bf Guest Lectures:} Relevance Modeling in IR and Machine Learning for IR. 
+\end{enumerate}
+
+\end{resume}
+
+
+\end{document}
+
+%%===========================================================================%%
